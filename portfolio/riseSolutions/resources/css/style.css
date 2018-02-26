@@ -1,0 +1,662 @@
+/*
+Orange color: #e67e22
+RGBA(112, 216, 252, 0.7); = Blue = #70D8FC
+RGBA(95, 211, 38, 0.7); = Green = #26C83C
+*/
+
+/* ------------------------- */
+
+/* BASIC SETUP */
+
+/* ------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-rendering: optimizeLegibility;
+}
+
+.strong {
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  /* font-size: 1.2rem; */
+  font-rendering: optimizeLegibility;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* ------------------------- */
+
+/* REUSABLE COMPONENTS */
+
+/* ------------------------- */
+
+.row {
+  max-width: 60em;
+  /*1140px*/
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
+/* ----- HEADINGS ----- */
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  /* color: #fff; */
+  font-size: 3em;
+  font-weight: 300;
+  font-family: Lato;
+  word-spacing: 3px;
+  color: RGBA(95, 211, 38, 0.6);
+}
+
+h2 {
+  font-size: 2em;
+  font-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #0d0d0d;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* ----- PARAGRAPHS ----- */
+
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 30px;
+}
+
+.box p {
+  font-size: 0.9em;
+  line-height: 145%;
+  /* text-align: center; */
+}
+
+.box h3 {
+  /* text-align: center; */
+  margin-top: 30px;
+  color: #26c83c;
+}
+
+/* ----- ICONS ----- */
+
+.box {
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* city-feature-section */
+.icon-small {
+  /* display: inline-block; */
+  width: 30px;
+  /* text-align: center; */
+  color: #70d8fc;
+  font-size: 120%;
+}
+
+svg.fa-5x {
+  color: #2c2e2a;
+}
+
+/* svg.fa-hand-paper {
+  color: #d18b42;
+}
+
+svg.fa-wrench {
+  color: #b3b5b5;
+}
+
+svg.fa-tint {
+  color: #70d8fc;
+}
+
+svg.fa-leaf {
+  color: #26c83c;
+} */
+.section-features .box h3 {
+  color: #2c2e2a;
+}
+/* ----- BUTTON ----- */
+
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+  margin: 5px 15px;
+  display: inline-block;
+  font-size: 1.3em;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+/*
+RGBA(112, 216, 252, 0.7); = Blue
+RGBA(95, 211, 38, 0.7); = Green
+*/
+
+/* .btn-full:link,
+.btn-full:visited {
+  border: 1px solid RGBA(112, 216, 252, 0.7);
+  background-color: RGBA(112, 216, 252, 0.7);
+  color: #fff;
+} */
+
+.btn-full:link,
+.btn-full:visited {
+  border: 1px solid RGBA(112, 216, 252, 1);
+  margin: 15px 15px 0 0;
+  color: RGBA(112, 216, 252, 1);
+}
+
+.btn-ghost:link,
+.btn-ghost:visited,
+input[type="submit"] {
+  border: 1px solid RGBA(112, 216, 252, 0.8);
+  margin: 15px 15px 0 0;
+  color: RGBA(112, 216, 252, 0.8);
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #fff;
+}
+
+/* .btn-full:hover,
+.btn-full:active {
+  background-color: Transparent;
+  border: 1px solid RGBA(112, 216, 252, 1);
+  color: RGBA(112, 216, 252, 1);
+} */
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: RGBA(112, 216, 252, 0.7);
+  border: 1px solid RGBA(112, 216, 252, 0.7);
+  color: #fff;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: RGBA(112, 216, 252, 0.7);
+  border: 1px solid RGBA(112, 216, 252, 0.7);
+  color: #fff;
+}
+
+/* ------------------------- */
+
+/* HEADER */
+
+/* ------------------------- */
+
+header {
+  background-image: linear-gradient(RGBA(0, 0, 0, 1), RGBA(0, 0, 0, 0.3)),
+    url(../img/riseImg/rise-solutions-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+/* header {
+  background-image: linear-gradient(
+      RGBA(112, 216, 252, 0.7),
+      RGBA(95, 211, 38, 0.4)
+    ),
+    url(../img/StockPhotos/alex-jones-1248.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+} */
+
+/* .hero-wrapper {
+  margin: 0 auto;
+  margin-top: 200px;
+  padding: 15px;
+  width: 95%;
+  overflow: hidden;
+} */
+
+/* .hero-button {
+  margin: 0 auto;
+  width: 50%;
+  overflow: hidden;
+} */
+
+.hero-text-box {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15%;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: auto;
+  /* position: absolute;
+  width: 60em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*half of its width/height up and to left*/
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  float: left;
+  margin-top: 1em;
+  margin-left: 1em;
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  /* border-radius: 40%; */
+}
+
+svg.svg-inline--fa.fa-user-secret.fa-w-14.fa-3x {
+  /* height: 100px; */
+  width: auto;
+  float: left;
+  margin-top: 0.6em;
+  color: #e67e22;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 2.5em;
+  margin-right: 2.5em;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 2em;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  color: #26c83c;
+  /* color: RGBA(112, 216, 252, 1); */
+  transition: color 0.2s;
+  /* border-bottom: 1px solid rgba(230, 126, 34, 0.8); */
+}
+
+/* ------------------------- */
+
+/* FEATURES */
+
+/* ------------------------- */
+
+.section-features .long-copy {
+  margin-bottom: 40px;
+}
+
+.phoneLink {
+  text-decoration: none;
+  list-style: none;
+  color: #26c83c;
+}
+/* ------------------------- */
+
+/* PLACES */
+
+/* ------------------------- */
+
+.section-places {
+  padding: 0;
+}
+
+.places-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.places-showcase li {
+  display: block;
+  float: left;
+  width: 33.3%;
+}
+
+.place-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.place-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.25);
+  transition: transform 0.9s;
+}
+
+.place-photo img:hover {
+  transition: transform 0.9s;
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* ------------------------- */
+
+/* HOW IT WORKS */
+
+/* ------------------------- */
+
+.section-steps {
+  /* background-color: #f4f4f4; */
+  background-color: #ebebeb;
+}
+
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+}
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app-screen {
+  width: 60%;
+}
+
+.works-step {
+  margin-bottom: 50px;
+}
+
+.works-step p {
+  padding-top: 15px;
+  margin-right: 5px;
+}
+
+.works-step:last-of-type {
+  margin-bottom: 80px;
+}
+
+.works-step div {
+  color: #26c83c;
+  border: 2px solid #26c83c;
+  display: inline-block;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding: 10px;
+  float: left;
+  font-size: 1.5em;
+  margin-right: 25px;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+/* ------------------ */
+
+/* CITIES */
+
+/* ------------------ */
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.city-feature {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.city-feature p {
+  margin-left: 10px;
+}
+
+/* ---------------- */
+
+/* SUGGESTIONS */
+
+/* ---------------- */
+
+.section-twitter-suggestions {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url(img/portland-oregon-tree-canopy-reviews.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+}
+
+blockquote:before {
+  display: flex;
+  content: "\201C";
+  font-size: 400%;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 15px;
+  display: block;
+}
+
+.suggestions {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 40px;
+}
+
+/* ------------------ */
+
+/* FORM */
+
+/* ------------------ */
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+  /* add line below (468) to make font larger */
+  font-size: 1.2em;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  /* add line below (482-484) to change text color,
+  add font style that we have throughout,
+  and change font weight in select drop down */
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+}
+
+textarea {
+  height: 100px;
+}
+
+*:focus {
+  outline: none;
+}
+
+footer {
+  background-color: #333;
+}
+
+footer p {
+  color: #888;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul:first-child {
+  margin-left: 20px;
+}
+
+.footer-nav {
+  list-style: none;
+  font-size: 90%;
+  /* float: left; */
+  display: flex;
+  justify-content: flex-start;
+}
+
+.social-links {
+  list-style: none;
+  /* float: right; */
+  display: flex;
+  justify-content: flex-end;
+  font-size: 120%;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+footer .icon-small,
+footer .icon-small,
+footer .icon-small,
+footer .icon-small {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+footer .icon-small:hover,
+footer .icon-small:active {
+  text-decoration: none;
+  border: 0;
+  color: #26c83c;
+}
+
+.copyright {
+  padding-bottom: 5px;
+  font-size: 70%;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: #e67e22;
+}
+
+.copyright a:hover {
+  color: #30fc49;
+}
+
+/* ---------------------------- */
+/* BEFORE & AFTER */
+/* ---------------------------- */
+
+/* .pressureWash {
+  background: url(../img/riseImg/rise-solutions-pressure-washing-before.jpg);
+}
+.pressureWash:hover {
+  background: url(../img/riseImg/rise-solutions-pressure-washing-after.jpg);
+}
+
+.gutter {
+  background: url(../img/riseImg/rise-solutions-gutter-before-02.jpg);
+}
+.gutter:hover {
+  background: url(../img/riseImg/rise-solutions-gutter-after-02.jpg);
+}
+
+.roof {
+  background: url(../img/riseImg/rise-solutions-roof-before.jpg);
+}
+.roof:hover {
+  background: url(../img/riseImg/rise-solutions-roof-after.jpg);
+}
+
+.gutter {
+  background: url(../img/riseImg/rise-solutions-gutter-before-02.jpg);
+}
+.gutter:hover {
+  background: url(../img/riseImg/rise-solutions-gutter-after-02.jpg);
+}
+
+.gutter {
+  background: url(../img/riseImg/rise-solutions-gutter-before-02.jpg);
+}
+.gutter:hover {
+  background: url(../img/riseImg/rise-solutions-gutter-after-02.jpg);
+} */
