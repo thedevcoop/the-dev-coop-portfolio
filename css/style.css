@@ -1,0 +1,339 @@
+/* ------------------------- */
+
+/* BASIC SETUP */
+
+/* ------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+}
+
+html * {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-rendering: optimizeLegibility;
+}
+
+.strong {
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-rendering: optimizeLegibility;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* ------------------------- */
+
+/* ----- HEADINGS ----- */
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 3em;
+  font-weight: 300;
+  font-family: Lato;
+  word-spacing: 3px;
+  color: #fc0d1c;
+}
+
+h2 {
+  font-size: 2em;
+  font-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #0d0d0d;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+a {
+  font-family: lato;
+  font-weight: 300;
+}
+
+/* ------------------------------------ */
+/* --------- BUTTONS ------------- */
+/* ------------------------------------ */
+
+.btn {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: Lato;
+  color: #fc0d1c;
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+}
+
+.btn:hover,
+.btn:active {
+  color: #fff;
+  background-color: #fc0d1c;
+  border-color: #fc0d1c;
+}
+
+/* ------------------------------------ */
+/* --------- ICONS ------------- */
+/* ------------------------------------ */
+
+svg.fa-5x {
+  color: #fc0d1c;
+  margin-bottom: 25px;
+}
+
+/* ------------------------------------ */
+/* --------- NAV ------------- */
+/* ------------------------------------ */
+
+nav * {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fc0d1c;
+}
+
+/* ------------------------------------ */
+/* --------- HEADER ------------- */
+/* ------------------------------------ */
+
+header {
+  background-image: linear-gradient(RGBA(0, 0, 0, 1), RGBA(0, 0, 0, 0.3)),
+    url(../img/hero-01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+}
+
+header * {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+}
+
+.jumbotron-fluid {
+  color: #fff;
+  padding-top: 10%;
+  padding-left: 10%;
+}
+
+.hero-1 {
+  font-size: 2.4em;
+}
+
+.hero-2 {
+  font-size: 1.4em;
+}
+
+.hero-3 {
+  font-size: 0.7em;
+}
+/* ---------------- ACCENTS -------------------- */
+
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 30px;
+}
+
+.section-features .long-copy {
+  margin: 55px auto;
+}
+
+section {
+  margin: 5em auto;
+}
+
+.nuke {
+  display: -webkit-box;
+}
+
+.nuke:after {
+  height: 0;
+}
+
+/* ------------------------------------ */
+/* --------- FEATURES ------------- */
+/* ------------------------------------ */
+
+.box {
+  margin: 15px auto;
+  text-align: center;
+}
+
+.section-features h2 {
+  margin-top: 35px;
+}
+
+/* ------------------------------------ */
+/* --------- SECTION-CONTACT ------------- */
+/* ------------------------------------ */
+
+.section-contact {
+  background-image: linear-gradient(RGBA(0, 0, 0, 0.8), RGBA(0, 0, 0, 0.7)),
+    url(../img/payphone-contact-crop.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 400;
+}
+
+.section-contact button {
+  width: 100%;
+  margin: 1em;
+  background-color: transparent;
+  border-color: #fff;
+  background-color: #fff;
+}
+
+.section-contact h2 {
+  padding-top: 1em;
+  color: #fff;
+}
+
+.section-contact h2:after {
+  background-color: #fff;
+}
+
+.section-contact .btn-row {
+  margin-top: 5em;
+  padding-bottom: 5em;
+}
+
+/* ------------------------- */
+/* ----- PORTFOLIO ----- */
+/* ------------------------- */
+
+.section-portfolio h3 {
+  padding-top: 22%;
+  text-align: center;
+  font-size: 2.3em;
+}
+
+.portfolio-picture .after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: block;
+  transition: all 0.5s ease-out;
+  background: rgba(0, 0, 0, 0.7);
+}
+.portfolio-picture:hover .after {
+  background: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+}
+
+.live-demo {
+  /*  */
+}
+
+/* ----------------------------- */
+/* ----- FOOTER ----- */
+/* ----------------------------- */
+
+footer {
+  margin: 10px;
+  padding: 5px;
+}
+
+.footer-nav {
+  /* display: flex;
+  justify-content: flex-start; */
+}
+
+.social-links {
+  /* display: flex;
+  justify-content: flex-end; */
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+footer .icon-small,
+footer .icon-small,
+footer .icon-small,
+footer .icon-small {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+footer .icon-small:hover,
+footer .icon-small:active {
+  text-decoration: none;
+  border: 0;
+  color: #fc0d1c;
+}
+
+.copyright {
+  /* display: flex;
+  justify-content: center; */
+}
+
+.copyright p {
+  font-size: 0.7em;
+}
+
+.copyright a {
+  font-size: 0.9em;
+}

@@ -1,0 +1,24 @@
+*.paypalCss{
+	margin-top: 25rem;
+	margin-bottom: 25rem;
+	text-align: center;
+}
+.paypalCss h1{
+
+	margin-bottom: 10rem;
+}
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+button.navbar-toggle:before{
+	content: "\f0c9"; 
+  	font-family: FontAwesome;
+  	color: #F05F40;
+  	font-size: 3rem;
+}

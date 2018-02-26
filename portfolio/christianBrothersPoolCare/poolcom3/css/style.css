@@ -1,0 +1,14 @@
+.underline::after{
+
+  content: "";
+  display: block;
+  width: 400px;
+  height: .06rem;
+  margin: 3rem auto 5rem auto;
+  background: #FFF;
+}
+
+.call-to-action #social-i{
+	text-decoration: none;
+	padding: 10px;
+}
