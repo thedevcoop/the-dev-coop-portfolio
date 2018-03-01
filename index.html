@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="vendors/css/fa-svg-with-js.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet"> -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
   <script src="vendors/js/fontawesome-all.min.js"></script>
 </head>
 
@@ -33,6 +34,9 @@
           <a class="nav-link js-element-scroll" href="#services">Services</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link js-element-scroll" href="#pricing">Pricing</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link js-element-scroll" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
@@ -52,6 +56,7 @@
       </p>
     </div>
   </header>
+  <!-- features -->
   <section class="section-features" id="services">
     <h2>Primary services &mdash; Personal Company &amp; Large Corperation</h2>
     <h2 class="nuke"><p class="long-copy">
@@ -78,7 +83,7 @@
       </div>
     </div>
   </section>
-
+  <!-- contact -->
   <section class="section-contact" id="contact">
     <h2>contact us today</h2>
     <div class="container box-padding">
@@ -89,7 +94,73 @@
       </div>
     </div>
   </section>
-
+  <!-- pricing -->
+  <section id="pricing" class="section-pricing">
+    <div class="container">
+      <h2>Initial Costs &amp; Packages</h2>
+      <div class="row d-flex justify-content-center">
+        <div class="card-deck">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="img/the-dev-coop-front-end.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h3 class="card-title">Front-End</h3>
+              <p class="card-text">Front end development consists of what a user interacts with on your webpage, clicking buttons or reading information, the overall flow of the page. Being able to accomplish a task without getting lost or running into aggrevating steps along
+                the way. Primarily most companies use front end only webpages to make a presence online with a focus on SEO (showing up on Google).</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Domains</li>
+              <li class="list-group-item">Development</li>
+              <li class="list-group-item">Server</li>
+            </ul>
+            <div class="card-body d-flex flex-column">
+              <li class="list-group-item">$1000 initial cost &amp; <br> $50/month maintenance</li>
+              <a href="#" class="btn card-link">Buy Now</a>
+              <p><small>All prices are base level estimates only.</p></small>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="img/the-dev-coop-back-end.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h3 class="card-title">Back-End</h3>
+              <p class="card-text">Back-end development incorperates unseen functionality that operates based on the front-end user. When have a company that stores user information, shopping carts, etc... This is done on the front-end by the user, processed by the beck-end.
+                This is primarily used by companies that aim towards making money with their webpage. application and stored in a secure database.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Front-end services</li>
+              <li class="list-group-item">Application</li>
+              <li class="list-group-item">Database</li>
+            </ul>
+            <div class="card-body d-flex flex-column">
+              <li class="list-group-item">$5k initial cost &amp; <br> $250/month maintenance</li>
+              <a href="#" class="btn card-link">Buy Now</a>
+              <p><small>All prices are base level estimates only.</small></p>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="img/the-dev-coop-deployment.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h3 class="card-title">Deployment</h3>
+              <p class="card-text">Deployment is a large undertaking for many companies, but it is a crucial part to overall success and net gain. Creating communication platforms, testing, agile life-cycle, continuous delivery, and more. Even basic implmentation of deployment
+                practices can save companies thousands of dollars monthly. Primarily used for companies that are looking to save money.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Back-end services</li>
+              <li class="list-group-item">Continuous Integration</li>
+              <li class="list-group-item">Scalability &amp; Cost reduction</li>
+            </ul>
+            <div class="card-body d-flex flex-column">
+              <li class="list-group-item">$10k initial cost &amp; <br> $500/month maintenance</li>
+              <a href="#" class="btn card-link">Buy Now</a>
+              <p><small>All prices are base level estimates only.</p></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- portfolio -->
   <section class="section-portfolio" id="portfolio">
     <h2>Some Of Our Work</h2>
 
@@ -125,6 +196,7 @@
       <ul class="footer-nav col-md-6 col d-flex justify-content-center">
         <li><a href="#home">home</a></li>
         <li><a href="#services">services</a></li>
+        <li><a href="#pricing">pricing</a></li>
         <li><a href="#portfolio">portfolio</a></li>
         <li><a href="#contact">contact</a></li>
         </ul>

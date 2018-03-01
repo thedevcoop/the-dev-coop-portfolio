@@ -27,6 +27,10 @@ html * {
   font-rendering: optimizeLegibility;
 }
 
+p > small {
+  font-size: 0.6em;
+}
+
 .clearfix {
   zoom: 1;
 }
