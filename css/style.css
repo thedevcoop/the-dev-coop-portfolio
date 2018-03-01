@@ -112,6 +112,26 @@ a {
   border-color: #fc0d1c;
 }
 
+.btn:active:focus {
+  color: #ffffff;
+  background-color: #fc0d1c;
+  border-color: #fc0d1c;
+}
+
+header a.btn.btn-primary.btn-lg:active {
+  background-color: #ebebeb;
+  color: #fc0d1c;
+  outline: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+a:focus {
+  outline: none;
+}
+
 /* ------------------------------------ */
 /* --------- ICONS ------------- */
 /* ------------------------------------ */
@@ -144,7 +164,7 @@ nav * {
 
 header {
   background-image: linear-gradient(RGBA(0, 0, 0, 1), RGBA(0, 0, 0, 0.3)),
-    url(../img/hero-01.jpg);
+    url(../img/hero-01-compr.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -228,6 +248,11 @@ section {
   font-size: 400;
 }
 
+.section-contact li {
+  display: inline-block;
+  margin: auto 5px;
+}
+
 .section-contact button {
   width: 100%;
   margin: 1em;
@@ -248,6 +273,23 @@ section {
 .section-contact .btn-row {
   margin-top: 5em;
   padding-bottom: 5em;
+}
+
+/* ------------------------- */
+/* ----- PRICING ----- */
+/* ------------------------- */
+
+.section-pricing .card {
+  margin-bottom: 55px;
+}
+.section-pricing div.card:after {
+  display: block;
+  height: 2px;
+  background-color: #0d0d0d;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 /* ------------------------- */

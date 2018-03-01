@@ -86,74 +86,91 @@
   <!-- contact -->
   <section class="section-contact" id="contact">
     <h2>contact us today</h2>
-    <div class="container box-padding">
+
+
+    <div class="container box-padding d-flex justify-content-center">
       <div class="row btn-row">
-        <button class="btn btn-primary btn-lg col-md">Call</button>
-        <button class="btn btn-primary btn-lg col-md">Text</button>
-        <button class="btn btn-primary btn-lg col-md">Email</button>
+        <ul class="list-inline intro-social-buttons">
+          <li>
+            <a href="tel:4074958201" class="btn btn-default btn-lg"><i class="fa fa-phone"></i> <span class="network-name">Call</span></a>
+          </li>
+          <li>
+            <a href="sms:4074958201" class="btn btn-default btn-lg"><i class="fa fa-comments"></i> <span class="network-name">Text</span></a>
+          </li>
+          <li>
+            <a href="mailto:thedevcoop@yahoo.com" class="btn btn-default btn-lg"><i class="fa fa-envelope"></i> <span class="network-name">Email</span></a>
+          </li>
+        </ul>
       </div>
     </div>
+
   </section>
   <!-- pricing -->
   <section id="pricing" class="section-pricing">
     <div class="container">
       <h2>Initial Costs &amp; Packages</h2>
       <div class="row d-flex justify-content-center">
-        <div class="card-deck">
-          <div class="card" style="width: 20rem;">
+        <div class="card-deck col">
+          <div class="card">
             <img class="card-img-top" src="img/the-dev-coop-front-end.jpg" alt="Card image cap">
             <div class="card-body">
-              <h3 class="card-title">Front-End</h3>
-              <p class="card-text">Front end development consists of what a user interacts with on your webpage, clicking buttons or reading information, the overall flow of the page. Being able to accomplish a task without getting lost or running into aggrevating steps along
-                the way. Primarily most companies use front end only webpages to make a presence online with a focus on SEO (showing up on Google).</p>
+              <h3 class="card-title">Front-End<h6> <span class="badge badge-secondary">Most Popular</span><h6></h3>
+              <p class="card-text">Front end development consists of what a user interacts with on your webpage &amp; the overall flow of the page. Being able to accomplish a task without getting lost or running into aggrevating steps along the way. Primarily most companies
+                use front end only webpages to make a presence online with a focus on SEO (showing up on Google).</p>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Domains</li>
-              <li class="list-group-item">Development</li>
-              <li class="list-group-item">Server</li>
-            </ul>
-            <div class="card-body d-flex flex-column">
-              <li class="list-group-item">$1000 initial cost &amp; <br> $50/month maintenance</li>
-              <a href="#" class="btn card-link">Buy Now</a>
-              <p><small>All prices are base level estimates only.</p></small>
+            <div class="card-footer">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Domains</li>
+                <li class="list-group-item">Development</li>
+                <li class="list-group-item">Server</li>
+              </ul>
+              <div class="card-body d-flex flex-column">
+                <li class="list-group-item">$1000 initial cost &amp; <br> $50/month maintenance</li>
+                <a href="mailto:thedevcoop@yahoo.com?subject=Front-End%20Package&body=I%20am%20interested%20in%20your%20Front-end%20package" class="btn card-link">Buy Now</a>
+                <p><small>All prices are base level estimates only.</p></small>
+              </div>
             </div>
           </div>
           <!-- 2 -->
-          <div class="card" style="width: 20rem;">
+          <div class="card">
             <img class="card-img-top" src="img/the-dev-coop-back-end.jpg" alt="Card image cap">
             <div class="card-body">
               <h3 class="card-title">Back-End</h3>
               <p class="card-text">Back-end development incorperates unseen functionality that operates based on the front-end user. When have a company that stores user information, shopping carts, etc... This is done on the front-end by the user, processed by the beck-end.
                 This is primarily used by companies that aim towards making money with their webpage. application and stored in a secure database.</p>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Front-end services</li>
-              <li class="list-group-item">Application</li>
-              <li class="list-group-item">Database</li>
-            </ul>
-            <div class="card-body d-flex flex-column">
-              <li class="list-group-item">$5k initial cost &amp; <br> $250/month maintenance</li>
-              <a href="#" class="btn card-link">Buy Now</a>
-              <p><small>All prices are base level estimates only.</small></p>
+            <div class="card-footer">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Front-end services</li>
+                <li class="list-group-item">Application</li>
+                <li class="list-group-item">Database</li>
+              </ul>
+              <div class="card-body d-flex flex-column">
+                <li class="list-group-item">$5k initial cost &amp; <br> $250/month maintenance</li>
+                <a href="mailto:thedevcoop@yahoo.com?subject=Back-End%20Package&body=I%20am%20interested%20in%20your%20Back-end%20package" class="btn card-link">Buy Now</a>
+                <p><small>All prices are base level estimates only.</small></p>
+              </div>
             </div>
           </div>
           <!-- 3 -->
-          <div class="card" style="width: 20rem;">
+          <div class="card">
             <img class="card-img-top" src="img/the-dev-coop-deployment.jpg" alt="Card image cap">
             <div class="card-body">
               <h3 class="card-title">Deployment</h3>
               <p class="card-text">Deployment is a large undertaking for many companies, but it is a crucial part to overall success and net gain. Creating communication platforms, testing, agile life-cycle, continuous delivery, and more. Even basic implmentation of deployment
                 practices can save companies thousands of dollars monthly. Primarily used for companies that are looking to save money.</p>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Back-end services</li>
-              <li class="list-group-item">Continuous Integration</li>
-              <li class="list-group-item">Scalability &amp; Cost reduction</li>
-            </ul>
-            <div class="card-body d-flex flex-column">
-              <li class="list-group-item">$10k initial cost &amp; <br> $500/month maintenance</li>
-              <a href="#" class="btn card-link">Buy Now</a>
-              <p><small>All prices are base level estimates only.</p></small>
+            <div class="card-footer">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Back-end services</li>
+                <li class="list-group-item">Continuous Integration</li>
+                <li class="list-group-item">Scalability &amp; Cost reduction</li>
+              </ul>
+              <div class="card-body d-flex flex-column">
+                <li class="list-group-item">$10k initial cost &amp; <br> $500/month maintenance</li>
+                <a href="mailto:thedevcoop@yahoo.com?subject=Deployment%20Package&body=I%20am%20interested%20in%20your%20Deployment%20package" class="btn card-link">Buy Now</a>
+                <p><small>All prices are base level estimates only.</p></small>
+              </div>
             </div>
           </div>
         </div>
@@ -167,29 +184,34 @@
     <div class="row portfolio-showcase no-gutters">
       <div class="col-lg-3 col-sm-6 portfolio-picture">
         <a href="portfolio/underHillPaintersBootStrap/index.html" target="_blank">
-        <img src="img/portfolio-img/underhillpainters-portfolio-web-development.jpg " alt="Underhill painters developed by The Dev Coop " class="img-fluid ">
-        <div class="after">
-          <h3 class="live-demo ">live demo</h3>
-        </div>
+        <img src="img/portfolio-img/underhillpainters-portfolio-web-development.jpg" alt="Underhill painters developed by The Dev Coop " class="img-fluid ">
+        <h3 class="after">live demo</h3>
+      </a>
       </div>
       <div class="col-lg-3 col-sm-6 portfolio-picture">
         <a href="portfolio/christianBrothersPoolCare/poolcom3/index.html" target="_blank">
         <img src="img/portfolio-img/christianbrotherspoolcare-portfolio-web-development.jpg" alt="Christian Brothers Pool Care developed by The Dev Coop" class="img-fluid">
         <h3 class="after">live demo</h3>
+      </a>
       </div>
       <div class="col-lg-3 col-sm-6 portfolio-picture">
         <a href="portfolio/thePinkPigChallenge/PPC/production/Template/index.html" target="_blank">
         <img src="img/portfolio-img/pinkpigchallenge-portfolio-web-development.jpg" alt=" The Pink Pig Challenge (non-profit) developed by The Dev Coop" class="img-fluid">
         <h3 class="after">live demo</h3>
+      </a>
       </div>
       <div class="col-lg-3 col-sm-6 portfolio-picture">
         <a href="portfolio/riseSolutions/index.html" target="_blank">
         <img src="img/portfolio-img/rise-portfolio-web-development.jpg" alt="Rise Solutions developed by The Dev Coop" class="img-fluid">
         <h3 class="after">live demo</h3>
+      </a>
       </div>
     </div>
 
   </section>
+
+
+
 
   <footer>
     <div class="row">
@@ -199,27 +221,27 @@
         <li><a href="#pricing">pricing</a></li>
         <li><a href="#portfolio">portfolio</a></li>
         <li><a href="#contact">contact</a></li>
-        </ul>
-        <ul class="social-links col-md-6 d-flex justify-content-center">
-          <li><a href="https://www.facebook.com/the-dev-coop/"><i class="fab fa-facebook fa-1x icon-small" aria-hidden="true"></i></a></li>
-          <li><a href="https://twitter.com/the-dev-coop/"><i class="fab fa-twitter fa-1x icon-small" aria-hidden="true"></i></a></li>
-          <li><a href="https://www.linkedin.com/the-dev-coop/"><i class="fab fa-linkedin fa-1x icon-small" aria-hidden="true"></i></a></li>
-          <li><a href="https://www.github.com/the-dev-coop/"><i class="fab fa-github fa-1x icon-small" aria-hidden="true"></i></a></li>
-          <li><a href="https://www.stackoverflow.com/the-dev-coop/"><i class="fab fa-stack-overflow fa-1x icon-small" aria-hidden="true"></i></a></li>
-        </ul>
-      </div>
-      <div class="row copyright d-flex justify-content-center">
-        <p>
-          Copyright &copy; 2018 by <a href="http://thedevcoop.com">TheDevCoop</a>. All rights reserved.
-        </p>
-      </div>
-      </footer>
+      </ul>
+      <ul class="social-links col-md-6 d-flex justify-content-center">
+        <li><a href="https://www.facebook.com/the-dev-coop/"><i class="fab fa-facebook fa-1x icon-small" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/the-dev-coop/"><i class="fab fa-twitter fa-1x icon-small" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/the-dev-coop/"><i class="fab fa-linkedin fa-1x icon-small" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.github.com/the-dev-coop/"><i class="fab fa-github fa-1x icon-small" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.stackoverflow.com/the-dev-coop/"><i class="fab fa-stack-overflow fa-1x icon-small" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="row copyright d-flex justify-content-center">
+      <p>
+        Copyright &copy; 2018 by <a href="http://thedevcoop.com">TheDevCoop</a>. All rights reserved.
+      </p>
+    </div>
+  </footer>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
